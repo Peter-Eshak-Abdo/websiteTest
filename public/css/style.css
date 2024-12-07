@@ -782,7 +782,6 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: 250px;
-  /* margin-left: 250px; */
 }
 .llFooter .socialMedia p {
   font-weight: 700;
@@ -796,7 +795,6 @@ footer {
 }
 .llFooter .navigate {
   list-style-image: url("../images/lifelinelist.png");
-  /* margin-right: 250px; */
 }
 .llFooter .navigate p {
   font-weight: 700;
