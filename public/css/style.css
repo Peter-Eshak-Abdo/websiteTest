@@ -329,17 +329,17 @@ section.mainContainer {
   flex-wrap: wrap;
 }
 .servicesCard {
-margin: 16px;
-height: 525px;
-width: 400px;
-border-radius: 4px;
-background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url("images/pic2.jpg");
-background-size: cover;
-position: relative;
-color: var(--w);
+  margin: 16px;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("images/pic2.jpg");
+  background-size: cover;
+  position: relative;
+  color: var(--w);
 }
 .servicesCard:nth-child(2) {
-background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url("images/pic3.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("images/pic3.jpg");
 }
 .services h2 {
   position: absolute;
@@ -370,7 +370,7 @@ background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6
   cursor: pointer;
 }
 @media screen and (max-width: 960px) {
-  .services{
+  .services {
     height: 1600px;
   }
   .services h1 {
@@ -502,5 +502,323 @@ footer {
     padding: 10px;
     width: 100%;
   }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* lifeline */
+:root {
+  --primary: #2dd4bf;
+  --secondry: #005f76;
+  --btn-bg: #0891b2;
+}
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+.llBody {
+  font-family: "Source Code Pro", monospace;
+  background-color: #f8fafc;
+}
+.llHeader .llNav {
+  position: relative;
+  margin: auto;
+  height: 45px;
+  max-width: 1024px;
+  margin: 30px 150px 64px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-self: center;
+  align-self: baseline;
+}
+.llNav .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.llNav .logo img {
+  width: 45px;
+  height: 45px;
+}
+.llNav .logo p {
+  color: var(--primary);
+  font-size: 32px;
+}
+.llNav ul {
+  list-style-type: none;
+  justify-content: center;
+  font-size: 22px;
+}
+.llNav ul li {
+  margin: auto 15px;
+  display: inline;
+}
+.llNav a {
+  color: var(--primary);
+  border: 3px solid var(--primary);
+  align-items: flex-end;
+  position: absolute;
+  right: 170px;
+  border-radius: 9px;
+  padding: 10px;
+  text-decoration: none;
+}
+.llSec1 {
+  margin: 0px 150px 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("../images/lifelineLogo.svg");
+  background-repeat: no-repeat;
+  background-size: 345px;
+  background-position: center;
+}
+.llSec1 .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.llSec1 .content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  border-left: 3px solid var(--primary);
+  padding-left: 10px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.llSec1 .content h2 {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.llSec1 .content p {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.llSec1 .content a {
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--btn-bg);
+  box-shadow: 3px 6px 4.2px 3px #67e8f97a;
+  border: 3px solid var(--btn-bg);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  width: 260px;
+}
+.llSec2 {
+  margin: 0px 100px 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.llSec2 .title h3 {
+  color: var(--secondry);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.llSec2 .title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  max-width: 580px;
+  margin: 20px auto;
+}
+.llSec2 .titleP {
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 65px;
+  max-width: 600px;
+}
+.llSec2 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.llSec2 .container .card {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px black;
+  margin: 20px 25px;
+  padding: 5px;
+}
+.llSec2 .container .card .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-self: center;
+}
+.card .title p {
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--secondry);
+  font-weight: 600;
+}
+.card p {
+  font-size: 14px;
+  text-align: start;
+}
+.llSec2 a {
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--btn-bg);
+  box-shadow: 3px 6px 4.2px 3px #67e8f97a;
+  border: 3px solid var(--btn-bg);
+  border-radius: 13px;
+  padding: 10px;
+  color: white;
+  margin: auto;
+  margin-top: 35px;
+}
+.llSec3 {
+  margin: 0px 100px 120px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  max-height: 400px;
+}
+.llSec3 img {
+  border-radius: 20px;
+}
+.llSec3 .content {
+  text-align: start;
+  margin-left: 40px;
+}
+.llSec3 .content h3 {
+  font-size: 24px;
+  color: var(--secondry);
+  margin-bottom: 10px;
+}
+.llSec3 .content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.llSec3 .content p {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.llSec3 .content a {
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--btn-bg);
+  box-shadow: 3px 6px 4.2px 3px #005f76;
+  border: 3px solid var(--btn-bg);
+  border-radius: 13px;
+  padding: 10px;
+  color: white;
+  margin: auto;
+  margin-top: 35px;
+}
+.llSec4 {
+  background-image: linear-gradient(to bottom right, #22d3ee, #5eead4);
+  margin: 0px 100px 130px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 33px 160px 40px;
+  border-radius: 26px;
+}
+.llSec4 h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.llSec4 p {
+  font-size: 24px;
+  text-align: center;
+}
+.llSec4 .data {
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+}
+.llSec4 .data input {
+  width: 220px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 35px 20px;
+}
+.llSec4 .data a {
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--btn-bg);
+  box-shadow: 3px 6px 4.2px 3px #67e8f97a;
+  border: 3px solid var(--btn-bg);
+  border-radius: 13px;
+  padding: 10px;
+  color: white;
+  margin: 35px auto;
+}
+
+.llFooter {
+  border-top: 15px solid #2dd4bf;
+  margin-bottom: 40px;
+  max-height: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+.llFooter .logo {
+  display: flex;
+  flex-direction: column;
+}
+.llFooter .logo img {
+  width: 155px;
+  height: 155px;
+}
+.llFooter .logo p {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+}
+.llFooter .socialMedia {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  /* margin-left: 250px; */
+}
+.llFooter .socialMedia p {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--secondry);
+  margin-bottom: 15px;
+}
+.llFooter .socialMedia .logoa {
+  display: flex;
+  flex-direction: row;
+}
+.llFooter .navigate {
+  list-style-image: url("../images/lifelinelist.png");
+  /* margin-right: 250px; */
+}
+.llFooter .navigate p {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--secondry);
+  margin-bottom: 15px;
+}
+.llFooter .contactUs {
+  max-width: 300px;
+}
+.llFooter .contactUs p {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--secondry);
+}
+.llFooter .contactUs ul {
+  list-style-type: none;
+}
+.llFooter .contactUs ul li {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 200;
+  font-style: italic;
 }
 
