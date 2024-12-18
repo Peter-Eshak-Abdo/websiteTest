@@ -66,7 +66,7 @@ document.body.appendChild(container);
 container.style.textAlign = "center";
 
 function element(prodName, prodImg) {
-  // Element
+  // Elements
   let card = document.createElement("div");
   let img = document.createElement("img");
   let title = document.createElement("h2");
