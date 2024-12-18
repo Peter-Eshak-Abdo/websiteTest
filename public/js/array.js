@@ -102,16 +102,12 @@ for (let i = 0; i < 9; i++) {
   element(productName[i], productImage[i]);
 }
 
-
 let buttReload = document.createElement("button");
 document.body.appendChild(buttReload);
 buttReload.innerText = "Reload Page";
 buttReload.style.position = "fixed";
 buttReload.style.bottom = "10px";
 buttReload.style.right = "10px";
-buttReload.addEventListener("click" , (params) => {
+buttReload.addEventListener("click", (params) => {
   window.location.reload();
 });
-
-
-
